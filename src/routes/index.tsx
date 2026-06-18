@@ -556,6 +556,11 @@ function Experience() {
                     </div>
                     <div
                       className={`font-display ${e.company === "Noblessetech" ? "text-4xl sm:text-5xl" : "text-5xl sm:text-6xl"} font-bold leading-none mb-4 text-gradient`}
+                      style={
+                        e.company === "Noblessetech"
+                          ? { fontSize: "clamp(2.125rem, 5vw, 2.875rem)" }
+                          : undefined
+                      }
                     >
                       {e.company}
                     </div>
